@@ -1,19 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-
+#include <conio.h>
 int main()
 {
     int n,k;
-    float sumD;
-    sumD=0.0;
-    printf("entre la valeur n\n");
-    scanf("%d",&n);
+    float sumU;
+    sumU=0.0;
+    printf("entre la valeur de n\n");
+    scanf("%d", &n);
     for(k=1;k<=n;k++)
     {
-        sumD=(sumD+exp(1/(k+n)));
+        sumU=(sumU+1)/(n^n+k);
     }
-    printf("sumD= %f",sumD);
-
-    return sumD;
+     printf("sumU= %f",sumU);
+    return sumU;
 }
